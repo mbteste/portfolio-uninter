@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/projeto.css">
+    <link rel="stylesheet" href="./css/carrossel.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/icone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="./js/Cabecalho.js" defer></script>
+    <script src="./js/Rodape.js" defer></script>
+    <script src="./js/Carrossel.js" defer></script>
+    <title>Marcos Bueno</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <shadow-cabecalho logo="../assets/imagens/logo.png"></shadow-cabecalho>
+    </header>
+
+    <!-- Container -->
+    <div class="container projeto-conteudo">
+
+
+        <!-- Título e Descrição -->
+        <div class="">
+            <h1 class="titulo"> Automatic Melody Harmonizer </h1>
+            <h2 class="subtitulo"> Das capacidades do programa: </h2>
+            <p class="descricao">
+                O aplicativo consegue ler uma partitura contendo apenas melodia em formato .xml, calcular prováveis
+                acordes para a melodia inserida usando o algoritmo de Viterbi que integra as Cadeias Ocultas de Markov,
+                então gerar uma harmonização e retornar uma partitura com a melodia harmonizada. O aplicativo conta com
+                recursos para trabalhar com diversos elementos da notação musical, tornando-o versátil.
+            </p>
+            <h3 class="subtitulo"> Algumas possibilidades de uso são (Vantagens): </h3>
+            <p class="descricao">
+                Fórmulas de compasso: fórmulas de compasso simples (em tempos de 2 ou de 3) e compostas (desde que não
+                sejam números primos). Todas as figuras rítmicas são aceitas como unidade de tempo.
+                Notas alteradas e enarmônicas: sustenidos e bemóis, assim como notas enarmônicas (ex: Dó e Si
+                sustenido), são consideradas.
+                Tonalidades: as partituras podem estar dentro das 24 tonalidades do sistema tonal (considerando
+                sustenidos e bemóis).
+                Ritmos: encontrar melodias em tempos fortes do compasso e harmonizá-las - em compassos compostos são
+                considerados os tempos fortes segundo a divisão do compasso pelo seu menor divisor dentre os números 2 e
+                3, lembrando que compassos primos não são divisíveis.
+                ex: compasso de 12: os tempos fortes são considerados segundo 4 compassos de tempos de 2.
+                ex: compasso de 9: os tempos fortes são considerados segundo 3 compassos de tempo de 3).
+                ex: compasso de 11: como já dito, a aplicação ainda não conta com harmonização de compassos primos.
+                Estilo: todas as harmonizações seguem o estilo da tonal. Dessa forma, os cálculos de Viterbi são feitos
+                segundo a progressão tonal, de certa forma similar ao que ocorre com a análise sintática usando o mesmo
+                algoritmo, mas onde cada parte do discurso é tido como três possibilidades: tônica, subdominante ou
+                dominante.
+            </p>
+            <h3 class="subtitulo"> Dos recursos ainda a serem desenvolvidos (Desvantagens): </h3>
+            <p class="descricao">
+                Fórmulas de compasso: não trabalha com fórmulas de compasso em tempos primos. Toda fórmula de compasso
+                divisível por 2 e 3 é arbitrariamente tida como uma divisão por 2, nunca por 3 e nunca considerada
+                segunda ela mesma. Se o compasso for divisível por 3 e não divisível por 2, ele é considerado segundo a
+                divisão por três.
+                Notas alteradas e enarmônicas: sustenidos e bemóis são lidos para serem ignorados uma vez que a
+                harmonização não foge à tonalidade inserida.
+                Tonalidades: a tonalidade inserida é a mesma até o fim da harmonização da melodia, desconsiderando,
+                assim, modulações e tonicizações.
+                Ritmos: apenas os tempos fortes são harmonizados, causando estranheza em músicas com forte presença de
+                ritmos em tempos fracos, e músicas com ritmos sincopados etc.
+                Estilo: apenas 3 acordes são gerados: I, IV e V grau.
+            </p>
+            <h2 class="subtitulo"> Outras informações: </h2>
+            <p class="descricao">
+                Esse é um pequeno resumo de uma aplicação que pode apresentar mais resultados. O desafio maior, para
+                além das desvantagens, é a ampliação do banco de dados e sua integração com outros estilos. Até o
+                momento, as matrizes de Viterbi foram geradas com a coleta de menos de 30 músicas de canções infantis,
+                todas em estilo tonal. De toda forma, a aplicação consegue gerar harmonias convincentes para melodias
+                mais simples, sem que haja a necessidade de muitas correções ao final do processo.
+            </p>
+        </div>
+
+
+        <!-- Carrousel Gifs -->
+        <section class="carrossel" aria-label="Gallery">
+            <shadow-carrossel animacao="true" images="
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/main/arquivos/logo.png?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/main/arquivos/menu.png?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/main/arquivos/instrucoes.gif?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/main/arquivos/sobre.png?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/readme/arquivos/readme/readme1.png?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/main/arquivos/loading.gif?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/readme/arquivos/readme/readme2.png?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/readme/arquivos/readme/readme3.png?raw=true,
+                https://github.com/MarcosAndreBueno/automatic_melody_harmonizer/blob/readme/arquivos/readme/readme4.png?raw=true
+                "></shadow-carrossel>
+        </section>
+
+
+        <!-- Conclusão -->
+        <div>
+            <p class="descricao">
+                Para visualizar o código, por favor entre em:
+                <a href="https://github.com/MarcosAndreBueno/automatic_melody_harmonizer" target="_blank">
+                    Github/AutomaticMelodyHarmonizer</a>
+            </p>
+        </div>
+        <div class="tecnologias">
+            <ul class="tecnologias-lista">
+                <li> <i class="fy-python"></i> </li>
+                <li> <i class="fy-git"></i> </li>
+        </div>
+
+
+        <!-- Rodapé -->
+        <shadow-rodape link1="./java-game.html" nome1="Java Game" link2="./dsmeta.html" nome2="DSMeta"
+            link3="./financial.html" nome3="Financial" link4="./springboot3.html" nome4="Spring Boot 3"></shadow-rodape>
+    </div>
+</body>
+
+</html>

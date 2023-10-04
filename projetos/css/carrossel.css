@@ -1,0 +1,277 @@
+/* ============ Root ============ */
+:root {
+    --total-slides: 3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ============ Tags ============ */
+
+/* Tirar identificadores, margen superior e lateral */
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============ Tamanho e alinhamento ============ */
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: max(3%);
+}
+
+/* Tamanho, posição e sombra do carrosel */
+.carrossel-gifs {
+    width: 80rem;
+    height: 50rem;
+    height: 55rem;
+    filter: drop-shadow(0 0 10px #0003);
+}
+
+.carrossel-gifs-lista {
+    /* Posição alinhada à div pai */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    /* Rolagem carrousel */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    /* fixa rolagem com a posição inicial de cada gif */
+
+    counter-reset: item;
+}
+
+.carrossel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: black;
+    outline: none;
+
+    counter-increment: item;
+}
+
+.ir {
+    grid-row-start: 1;
+}
+
+.carrossel-slide:nth-child(even) {
+    background-color: #99f;
+}
+
+.carrossel-slide:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -40%, 70px);
+    color: #fff;
+    font-size: 2em;
+
+    content: "Carregando imagem " counter(item);
+}
+
+/* slide-gif */
+.slide-gif {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+
+/* ============ Comportamento Scroll ============ */
+
+/* Scrollbar invisível */
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/* ============ Navegação inferior ============ */
+
+/* centralização da navegação inferior */
+.carrossel-navegacao {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carrossel-navegacao-lista,
+.carrossel-navegacao-item {
+    display: inline-block;
+}
+
+.carrossel-navegacao-barra {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.carrossel-navegacao-barra {
+    transform: scale(1.5);
+    margin-right: 10px
+}
+
+.carrossel-navegacao-barra:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.voltar,
+.ir:hover {
+    cursor: pointer;
+}
+
+.voltar,
+.ir {
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.carrossel-botao {
+    font-size: 0;
+}
+
+.voltar {
+    z-index: 1;
+    left: 0;
+}
+
+.ir {
+    z-index: 1;
+    right: 0;
+}
+
+
+/* ============ Animação ============ */
+/* div base para os botões prev e next, mesmo tamanho e posição que div pai */
+.carrossel-canva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    /* fixa rolagem com a posição inicial de cada gif */
+}
+
+@media (hover: hover) {
+
+    /* del */
+    .carrossel-animacao {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    /* Quando chegar no último slide */
+    .carrossel-slide:last-child .carrossel-animacao {
+        animation-name: tostart, snap;
+    }
+}
+
+/*cancela animação em dispositivos que não suportam bem*/
+@media (prefers-reduced-motion: reduce) {
+
+    /* del */
+    .carrossel-animacao {
+        animation-name: none;
+    }
+}
+
+.carrossel-gifs:hover .carrossel-animacao,
+.carrossel-gifs:focus-within .carrossel-animacao {
+    animation-name: none;
+}
+
+/*quando não estiver no último slide*/
+@keyframes tonext {
+    75% {
+        left: 0;
+    }
+
+    95% {
+        left: 100%;
+    }
+
+    98% {
+        left: 100%;
+    }
+
+    99% {
+        left: 0;
+    }
+}
+
+/*quando estiver no último slide*/
+@keyframes tostart {
+    65% {
+        left: 0;
+    }
+
+    95% {
+        left: calc(var(--total-slides) * -100%);
+    }
+
+    98% {
+        left: calc(var(--total-slides) * -100%);
+    }
+
+    99% {
+        left: 0;
+    }
+}
+
+/*alterações na barra de navegação inferior que controla o gif selecionado*/
+@keyframes snap {
+    96% {
+        scroll-snap-align: center;
+    }
+
+    97% {
+        scroll-snap-align: none;
+    }
+
+    99% {
+        scroll-snap-align: none;
+    }
+
+    100% {
+        scroll-snap-align: center;
+    }
+}

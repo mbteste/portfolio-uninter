@@ -1,0 +1,228 @@
+@media screen and (width < 900px) {
+
+    /* Carrossel */
+    .carrossel-gifs {
+        width: 60rem;
+        height: 37.5rem;
+    }
+
+    .carrossel-navegacao-barra {
+        transform: scale(1);
+        margin-right: 0px;
+    }
+
+    /* Rodapé */
+    .tecnologias-lista i {
+        width: 25px;
+    }
+}
+
+@media screen and (width < 700px) {
+
+    /* Header */
+    .logo img {
+        width: 12rem;
+    }
+
+    /* Título e Descrição */
+
+    .titulo {
+        font-size: 3.5rem;
+    }
+
+    h2.subtitulo {
+        font-size: 2.25em;
+    }
+
+    h3.subtitulo {
+        font-size: 1.5rem;
+    }
+
+    .descricao {
+        font-size: 1.5rem;
+    }
+
+    .tecnologias-lista i {
+        width: 20px;
+    }
+
+    /* Carrossel */
+    .carrossel-gifs {
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .voltar,
+    .ir {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    /* Rodape */
+
+    .logo-rodape img {
+        width: 12rem;
+    }
+
+    .rodape {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tecnologias-lista i {
+        width: 20px;
+    }
+}
+
+@media screen and (width < 500px) {
+
+    /* Header */
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .menu {
+        padding-bottom: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .header {
+        display: block;
+        text-align: center;
+    }
+
+    /* Título e Descrição */
+
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    h2.subtitulo {
+        font-size: 1.75rem;
+    }
+
+    h3.subtitulo {
+        font-size: 1.25rem;
+        margin-left: 15rem;
+    }
+
+    .descricao {
+        font-size: 1.25rem;
+    }
+
+    /* Carrossel */
+
+    .carrossel-gifs {
+        width: 30rem;
+        height: 18.75rem;
+    }
+
+    .carrossel-botao {
+        top: -20px;
+    }
+
+    .voltar,
+    .ir {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    /* Rodapé */
+    .rodape {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .topicos {
+        font-size: 1.7rem;
+    }
+
+    .logo-rodape img {
+        width: 10rem;
+    }
+
+    .midia-social a {
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        border: 0.2rem solid;
+    }
+
+    .item {
+        font-size: 1.25rem;
+        padding-block: 5px;
+    }
+
+    .tecnologias-lista i {
+        width: 15px;
+    }
+}
+
+@media screen and (width < 320px) {
+
+    /* Header */
+
+    .logo img {
+        width: 5rem;
+    }
+
+    .menu {
+        font-size: 1rem;
+    }
+
+    /* Título e Descrição */
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    h2.subtitulo {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    h3.subtitulo {
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .descricao {
+        font-size: 1rem;
+    }
+
+    .tecnologias-lista i {
+        width: 10px;
+    }
+
+    /* Carrossel */
+
+    .carrossel-gifs {
+        width: 25rem;
+        height: 15.625rem;
+    }
+
+    /* Rodapé */
+
+    .topicos {
+        font-size: 1.25rem;
+    }
+
+    .logo-rodape img {
+        width: 7rem;
+    }
+
+    .midia-social a {
+        height: 2rem;
+        width: 2rem;
+        font-size: 1rem;
+        border-radius: 50%;
+        border: 0.1rem solid;
+    }
+
+    .item {
+        font-size: 1rem;
+    }
+}

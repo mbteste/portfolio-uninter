@@ -1,0 +1,222 @@
+/* ============ Global ============ */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: "Times New Roman", serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+    outline: 30px, blue;
+}
+
+:root {
+    --cor-fundo: #1f232e;
+    --cor-hover: #0ef;
+    --texto-inicial-cor: hsl(0, 0%, 75%);
+    --cor-fundo-secundaria: #323946;
+}
+
+body {
+    background-color: black;
+    overflow-x: auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* ============ Tags ============ */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: var(--texto-inicial-cor);
+    margin-block: 1rem;
+}
+
+p {
+    text-decoration: none;
+}
+
+a {
+    color: var(--texto-inicial-cor);
+}
+
+a:visited {
+    color: rgb(187, 114, 181);
+}
+
+/* ============ Alinhamento geral ============ */
+
+.projeto-conteudo {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 1240px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* ============ Header ============ */
+
+.header {
+    background-color: var(--cor-fundo-secundaria);
+    padding-inline: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img {
+    width: 15rem;
+    flex: 1;
+    margin-right: 3rem;
+}
+
+.menu {
+    flex: 2;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu a {
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ============ Título e descrição ============ */
+
+.titulo {
+    font-size: 4rem;
+    margin-block: 2rem;
+    font-weight: 750;
+}
+
+h2.subtitulo {
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+
+h3.subtitulo {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15rem;
+    text-decoration: underline;
+}
+
+.descricao {
+    font-size: 2rem;
+    text-align: justify;
+    padding-inline: 5%;
+}
+
+.tecnologias {
+    padding: 4rem;
+}
+
+.tecnologias-lista {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.tecnologias-lista i {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+/* ============ Rodapé ============ */
+
+.rodape {
+    background-color: var(--cor-fundo-secundaria);
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.topicos {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.logo-rodape {
+    width: 15rem;
+    background-color: var(--cor-fundo-secundaria);
+}
+
+.logo-rodape {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-rodape img {
+    width: 100%;
+}
+
+.coluna {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.midia-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-hover);
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid;
+    transition: 0.5s ease;
+}
+
+.contato {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+.item {
+    font-size: 1.5rem;
+    padding-block: 3px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,352 @@
+/* ======== Only specific to media query */
+.cabecalho {
+    margin: 5rem;
+}
+
+@media screen and (width < 1320px) {
+
+    /* ======== Úteis ======= */
+
+    .container {
+        padding-inline: 30px;
+        padding-bottom: 5rem;
+    }
+
+    .botao {
+        word-spacing: 0.2rem;
+        z-index: 2;
+    }
+
+    /* ======== Apresentação ======= */
+
+    .curriculo a {
+        font-size: 2rem;
+    }
+
+    /* ======== Projetos ======= */
+
+    div.previa p {
+        font-size: 10px !important;
+    }
+
+    div.previa h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (width < 900px) {
+
+    /* ======== Úteis e Tags======= */
+
+    .botao {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        padding-bottom: 5rem;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    /* ======== Apresentação ======= */
+
+    .curriculo a {
+        font-size: 1.6rem;
+    }
+
+    /* ======== Sobre ======= */
+
+    .carta-apresentacao {
+        width: 70%;
+    }
+
+    .apresentacao-cabecalho {
+        width: 44%;
+    }
+
+    /* ======== Projetos ======= */
+
+    div.previa p {
+        font-size: 20%;
+    }
+
+    .resumo {
+        display: none;
+    }
+
+    /* ======= Contato ======= */
+
+    .contato-imagem {
+        display: none;
+    }
+}
+
+@media screen and (width < 700px) {
+
+    /* ======== Úteis e Tags ======= */
+
+    h3 {
+        font-size: 210%;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ======== Início ======= */
+
+    h2.nome {
+        font-size: 3rem;
+    }
+
+    .nav-bar-itens {
+        display: none;
+    }
+
+    .nav-bar {
+        justify-content: center;
+    }
+
+    /* ======= Apresentação ======= */
+
+    .curriculo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto-principal {
+        width: 60%;
+    }
+
+    .apresentacao-conteudo {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .apresentacao-cabecalho {
+        width: 85%;
+        display: block;
+    }
+
+    .midia-social {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ======= Sobre ======= */
+
+    .sobre {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-cabecalho {
+        width: 87%;
+    }
+
+    .foto-sobre {
+        width: 30%;
+    }
+
+    .sobre-conteudo {
+        width: 100%;
+    }
+
+    .sobre .flex {
+        display: block;
+        align-items: center;
+        padding-inline: 5rem
+    }
+
+    /* Icones */
+
+    .sobre-tecnologias {
+        width: 100%;
+    }
+
+    .tecnologias {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tecnologias-lista {
+        gap: 2rem;
+    }
+
+    .tecnologias-lista i {
+        width: 30px;
+    }
+
+    /* ======= Projetos ======= */
+
+    .projetos-cartoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projeto-cartao {
+        width: 60%;
+    }
+
+    #Menu-card {
+        display: inline;
+        font-size: large;
+    }
+}
+
+@media screen and (width < 500px) {
+
+    /* ========== Tags ========== */
+
+    h1 {
+        font-size: 300%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    /* ========== Início ========== */
+
+    .logo img {
+        width: 14rem;
+    }
+
+    /* ========== Apresentação ========== */
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+
+    p.apresentacao-texto {
+        font-size: 1.5rem;
+    }
+
+    .midia-social a {
+        height: 2.75rem;
+        width: 2.75rem;
+        font-size: 1.75rem;
+        border-radius: 50%;
+        border: 0.1rem solid;
+    }
+
+    .curriculo a {
+        font-size: 1.25rem;
+        padding-inline: 0;
+    }
+
+    /* ======= Sobre ======= */
+
+    .carta-apresentacao a {
+        width: 100%;
+    }
+
+    .foto-sobre {
+        display: none;
+    }
+
+    .sobre-conteudo .cabecalho {
+        font-size: 3rem;    
+    }
+
+    .sobre-tecnologias .cabecalho{
+        font-size: 3rem;
+    }
+
+    .sobre-texto {
+        font-size: 1.5rem;
+        width: 70vw;
+        display: grid;
+    }
+
+    div.previa {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Icones */
+
+    .tecnologias-lista i {
+        width: 20px;
+    }
+
+    /* ======= Contato ======= */
+
+    .contato-lista i {
+        font-size: 15px;
+    }
+
+    .contato-email,
+    .contato-whatsapp {
+        margin-bottom: 5rem;
+        margin-right: 2rem;
+    }
+
+    h1.contato-item {
+        margin: 0;
+        margin-bottom: 5rem;
+        font-size: 150%
+    }
+
+    .contato-item a {
+        font-size: 2rem;
+    }
+
+    /* ========== Projetos ========== */
+
+    .projetos .cabecalho {
+        font-size: 3rem;
+    }
+
+    /* ========== Contato ========== */
+
+    .contato-cabecalho .cabecalho {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (width < 320px) {
+
+    /* ======= Sobre ======= */
+    .sobre-conteudo .cabecalho {
+        font-size: 2.25rem;
+    }
+
+    .sobre-tecnologias .cabecalho{
+        font-size: 2.25rem;
+    }
+
+    /* ======= Contato ======= */
+
+    .contato-lista i {
+        font-size: 10px;
+    }
+
+    h1.contato-item {
+        font-size: 10%
+    }
+
+    .contato-item a {
+        font-size: 1.5rem;
+    }
+
+    /* ========== Projetos ========== */
+
+    .projetos .cabecalho {
+        font-size: 2.25rem;
+    }
+
+    /* ========== Contato ========== */
+
+    .contato-cabecalho .cabecalho {
+        font-size: 2.25rem;
+    }
+}

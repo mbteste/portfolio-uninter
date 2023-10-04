@@ -1,0 +1,75 @@
+.fy-java {
+    background: url('https://api.iconify.design/logos/java.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/logos/java.svg');
+}
+
+.fy-springboot {
+    background: url('https://api.iconify.design/devicon/spring.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/spring.svg');
+}
+
+.fy-maven {
+    background: url('https://api.iconify.design/devicon/maven.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/maven.svg');
+}
+
+.fy-junit {
+    background: url('https://api.iconify.design/devicon/junit.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/junit.svg');
+}
+
+.fy-python {
+    background: url('https://api.iconify.design/devicon/python.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/python.svg');
+}
+
+.fy-git {
+    background: url('https://api.iconify.design/devicon/git.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/git.svg');
+}
+
+.fy-html {
+    background: url('https://api.iconify.design/vscode-icons/file-type-html.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/vscode-icons/file-type-html.svg');
+}
+
+.fy-css {
+    background: url('https://api.iconify.design/devicon/css3.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/css3.svg');
+}
+
+.fy-javascript {
+    background: url('https://api.iconify.design/skill-icons/javascript.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/skill-icons/javascript.svg');
+}
+
+.fy-typescript {
+    background: url('https://api.iconify.design/logos/typescript-icon-round.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/logos/typescript-icon-round.svg');
+}
+
+.fy-bootstrap {
+    background: url('https://api.iconify.design/devicon/bootstrap.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/bootstrap.svg');
+}
+
+.fy-angular {
+    background: url('https://api.iconify.design/logos/angular-icon.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/logos/angular-icon.svg');
+}
+
+.fy-h2 {
+    background: url('https://api.iconify.design/ci/heading-h2.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/ci/heading-h2.svg');
+    background-color: blue;
+}
+
+.fy-mysql {
+    background: url('https://api.iconify.design/logos/mysql.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/logos/mysql.svg');
+}
+
+.fy-postgre {
+    background: url('https://api.iconify.design/logos/postgresql.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/logos/postgresql.svg');
+}

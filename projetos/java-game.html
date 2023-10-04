@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/projeto.css">
+    <link rel="stylesheet" href="./css/carrossel.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/icone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="./js/Cabecalho.js" defer></script>
+    <script src="./js/Rodape.js" defer></script>
+    <script src="./js/Carrossel.js" defer></script>
+    <title>Marcos Bueno</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <shadow-cabecalho logo="../assets/imagens/logo.png"></shadow-cabecalho>
+    </header>
+
+    <!-- Container -->
+    <div class="container projeto-conteudo">
+
+
+        <!-- Título e Descrição -->
+        <div class="">
+            <h1 class="titulo">Java Game</h1>
+            <p class="descricao">
+                Projeto de desenvolvimento de um jogo para praticar lógica de programação e programação orientada a
+                objetos em Java. As bibliotecas usadas foram Java AWT e Java Swing, bem como algumas classes para
+                manipulação de arquivos .csv do Apache Commons.
+            </p>
+            <p class="descricao">
+                O projeto não seguiu designs retrôs, nem estilo de jogo 2D. Por conta disso, o mapa não foi desenvolvido
+                pelo padrão "Tiles", onde cada bloco, dispostos em matriz, são iterados para formar a imagem final.
+                Nesse sentido, a imagem do nível já é carregada em sua totalidade, podendo-se usar artes prontas (nesse
+                caso, pertencentes ao programa RPG MakerMZ). Outro fator importante que essa escolha estética ocasionou
+                foi a lógica de "hitbox". Para delimitar os hitbox do mapa foi seguido dois passos:
+            </p>
+            <p class="descricao">
+                Com auxílio do gimp: contornar os objetos sólidos do mapa em questão com alguma cor não presente
+                nele;
+            </p>
+            <p class="descricao">
+                Dentro do APP: iterar cada pixel do mapa procurando e salvando, em uma estrutura de dados, a posição
+                correspondente a tal cor, estabelecendo uma grade de 16x16 em toda imagem.
+            </p>
+        </div>
+
+
+        <!-- Carrousel Gifs -->
+        <section class="carrossel" aria-label="Gallery">
+            <shadow-carrossel animacao="true" images="
+                https://github.com/MarcosAndreBueno/java_game/blob/readme/arquivos/image%201.png?raw=true,
+                https://github.com/MarcosAndreBueno/java_game/blob/readme/arquivos/image%202.png?raw=true,
+                https://github.com/MarcosAndreBueno/java_game/blob/readme/arquivos/image%203.png?raw=true,
+                https://github.com/MarcosAndreBueno/java_game/blob/readme/arquivos/image%204.png?raw=true
+                "></shadow-carrossel>
+        </section>
+
+
+        <!-- Conclusão -->
+        <div>
+            <p class="descricao">
+                Para visualizar o código, por favor entre em:
+                <a href="https://github.com/MarcosAndreBueno/java_game" target="_blank">
+                    Github/JavaGame</a>
+            </p>
+        </div>
+        <div class="tecnologias">
+            <ul class="tecnologias-lista">
+                <li> <i class="fy-java"></i> </li>
+                <li> <i class="fy-git"></i> </li>
+            </ul>
+        </div>
+
+
+        <!-- Rodapé -->
+        <shadow-rodape link1="./automatic-melody-harmonizer.html" nome1="Automatic Melody Harmonizer"
+            link2="./dsmeta.html" nome2="DSMeta" link3="./financial.html" nome3="Financial" link4="./springboot3.html"
+            nome4="Spring Boot 3"></shadow-rodape>
+    </div>
+</body>
+
+</html>

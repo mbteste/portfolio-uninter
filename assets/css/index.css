@@ -1,0 +1,475 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Lato:ital,wght@0,400;1,700&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+/* ========== Globais ========== */
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: "Times New Roman", serif;
+    scroll-behavior: smooth;
+    outline: 30px, blue;
+}
+
+/* ========== Tags ========== */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    overflow-x: auto;
+}
+
+a {
+    color: var(--texto-inicial-cor);
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h2 {
+    font-size: 300%;
+}
+
+
+/* ========== variáveis ========== */
+
+:root {
+    --cor-fundo: #1f232e;
+    --cor-hover: #0ef;
+    --texto-inicial-cor: #fefefe;
+    --cor-fundo-secundaria: #323946;
+    --texto-corpo-cor: #fefffe;
+    --palavra-cor: rgb(231, 122, 122);
+}
+
+
+/* ========== Geral ========== */
+
+.container {
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.height-100vh {
+    height: 100vh;
+}
+
+.botao {
+    text-align: center;
+    width: 40%;
+    padding: max(6px, 1%);
+    border-radius: 20px;
+    word-spacing: 0.5rem;
+    background-color: var(--cor-hover);
+    box-shadow: 0 0 1rem var(--cor-hover);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* ========== Inicio ========== */
+
+.inicio {
+    color: var(--texto-inicial-cor);
+    font-family: 'Rubik Iso';
+}
+
+.logo img {
+    width: 17rem;
+}
+
+/* Início Barra de navegação */
+
+.nav-bar {
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-itens {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.nav-bar-itens a {
+    font-size: 2rem;
+}
+
+.active {
+    color: var(--cor-hover);
+}
+
+#Menu-card {
+    display: None;
+}
+
+/* Hover */
+.nav-bar-itens a:hover {
+    transform-origin: left;
+    transition: 0.5s ease-in-out;
+    color: var(--cor-hover);
+}
+
+/* ========== Apresentação ========== */
+
+.nome {
+    color: var(--cor-hover);
+    font-weight: 900;
+}
+
+.apresentacao-conteudo {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao-cabecalho {
+    width: 34%;
+    color: var(--texto-inicial-cor);
+    line-height: 1.5;
+    text-align: left;
+}
+
+.apresentacao-cabecalho h1 {
+    font-weight: 100;
+}
+
+p.apresentacao-texto {
+    font-size: 2rem;
+    margin-top: 9%;
+}
+
+/* Hover */
+.inicio i {
+    color: var(--cor-hover);
+}
+
+/* Apresentação Foto */
+
+.foto-principal {
+    width: 35%;
+}
+
+.foto-principal img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+/* Apresentação Foto Animação */
+
+@keyframes animacao {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Apresentação Mídia Social */
+
+.midia-social {
+    margin: max(3%, 40px) 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.midia-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-hover);
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid;
+    transition: 0.5s ease;
+}
+
+/* Mídia Social Hover */
+
+.midia-social a:hover {
+    background-color: var(--cor-hover);
+    color: #fefefe;
+}
+
+/* Apresentação Currículo */
+
+.curriculo {
+    margin-bottom: 2rem;
+}
+
+.curriculo a {
+    box-sizing: content-box;
+    color: var(--cor-fundo-secundaria);
+    font-weight: bolder;
+    font-size: 2rem;
+    padding-inline: 20px;
+}
+
+/* Curriculo hover */
+
+.botao:hover {
+    box-shadow: none;
+}
+
+
+/* ========== Sobre ========== */
+
+.sobre {
+    background-color: var(--cor-fundo-secundaria);
+    height: auto;
+}
+
+.sobre div {
+    justify-content: space-between;
+}
+
+
+/* Sobre Conteúdo */
+
+h2.cargo {
+    margin: max(10px, 2%) 0;
+    color: var(--palavra-cor);
+    font-size: 3.5rem;
+}
+
+.sobre-conteudo {
+    width: 45%;
+}
+
+.sobre-conteudo .cabecalho {
+    color: var(--texto-corpo-cor);
+    font-size: 4.5rem;
+}
+
+.sobre-texto {
+    font-size: 2rem;
+    color: var(--texto-corpo-cor);
+    margin-bottom: max(3%, 30px);
+}
+
+span.palavra {
+    color: var(--cor-hover);
+}
+
+.carta-apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+/* Icones */
+
+.sobre-tecnologias {
+    width: 45%;
+}
+
+.tecnologias-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding-bottom: 5rem;    
+}
+
+.tecnologias-lista li {
+    width: 100%;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+.tecnologias-lista i {
+    width: 3.5rem;
+}
+
+
+/* ========== Projetos ========== */
+
+.projetos {
+    margin-block: max(3%, 35px);
+    font-size: 4.5rem;
+}
+
+.projetos .cabecalho {
+    font-size: 4.5rem;
+    justify-content: space-evenly;
+}
+
+.projetos-cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.projeto-cartao {
+    margin-top: max(1%, 10px);
+    width: calc(30% - 20px);
+    position: relative;
+    overflow: hidden;
+}
+
+.projeto-cartao img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.projeto-cartao a {
+    color: black;
+}
+
+div.previa {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    gap: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--cor-hover));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: 0.5s;
+    padding: 0 4rem;
+}
+
+div.previa h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.previa {
+    text-align: center;
+}
+
+.resumo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+/* Hover */
+
+.projeto-cartao:hover div.previa {
+    cursor: pointer;
+    transform: translateY(0%);
+}
+
+/* ========== Contato ========== */
+
+.contato {
+    overflow: hidden;
+    background-image: url('../imagens/imagem-fundo.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 1rem;
+}
+
+.contato-imagem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+    
+.contato-cabecalho {
+    margin-top: max(3%, 35px);
+}
+
+.contato-cabecalho .cabecalho {
+    margin-top: max(3%, 35px);
+    font-size: 4.5rem;
+}
+
+.contato-conteudo {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topicos {
+    padding: 4rem;
+}
+
+.contato-imagem img {
+    width: 100%;
+    height: 90%;
+    left: 0;
+}
+
+.contato-lista {
+    display: flex;
+    align-items: center;
+}
+
+.contato-lista i {
+    font-size: 30px;
+}
+
+.contato-email {
+    color: white;
+}
+
+.contato-whatsapp {
+    color: green;
+}
+
+.contato-item {
+    color: var(--texto-corpo-cor);
+    margin: 5rem;
+}
+
+.contato-item a {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+/* Formulário */
+
+.form-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-conteudo {
+    padding-bottom: 50px;
+}
+
+textarea, input {
+    width: 90% !important;
+    font-size: 1.7rem;
+}
+
+input {
+    height: 3rem;
+    font-size: 1.7rem;
+}
+
+label {
+    display: block;
+    font-size: 3rem;
+    color: white;
+    padding-top: 20px;
+}
